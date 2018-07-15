@@ -1,8 +1,9 @@
 import org.apache.spark.SparkContext
 import org.apache.spark.SparkConf
-import org.apache.log4j.{Logger,Level}
+import org.apache.log4j.{Level, Logger}
+import org.apache.spark.rdd.RDD
 
-
+// Here,main goal of this code to get top key words which are repeated in a given text
 object employee {
   def findKeyValueByValue[K, V](map: Map[K, V], value: V): Option[(K, V)] =
     map.collectFirst { case kv @ (_, v) if v == value => kv }
@@ -16,11 +17,15 @@ object employee {
   val dataFMap = data.flatMap(word => word.split(" "))
   val dataMap = dataFMap.map(x => (x, 1))
   val dataReduce = dataMap.reduceByKey(_+_)
-  var maxValue = dataReduce.values.max()
-  val d = dataReduce.filter{case (x,y) =>   y == maxValue }
-    d.foreach(println)
+    val dataswap  = dataReduce.map(item => item.swap)
+    val datasort = dataswap.sortByKey( false)
+    val dataswso = datasort.map(item => item.swap)
+    dataswso.take(2).foreach(println)
 
-  //val d = dataReduce.map{ case(_,y)=>   y == maxValue }
+  //var maxValue = dataReduce.values.max()
+
+
+  //val d = dataReduce.filter{case (x,y) =>   y == maxValue }
 
   }
 }
