@@ -1,0 +1,13 @@
+---
+- name: Install Lamp Stack on remote machine
+  hosts: remotenode
+  become: true
+  become_user: root
+  gather_facts: true
+  tasks:
+    - name: "Install Apache 2"
+      package: name=httpd state=present
+    - name: "Install tree"
+      package: name=tree state=present
+    - name: "Install firewall"
+      package: name=firewalld state=present
