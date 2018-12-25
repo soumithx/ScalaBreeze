@@ -1,0 +1,14 @@
+---
+ - name: Copy files 
+   hosts: controlnode
+   become_user: true
+   become: root
+   tasks:
+     - copy:
+         src: "{{ item }}"                   # item value is defined by fileglob 
+         dest: /home/ec2-user/playbooks      # destination
+         owner: ec2-user                     # owner of the destination file <optional>
+         mode: 777                           # file permissions to be applied <optional> 
+       with_fileglob:                        # using file glob module  
+          - /home/ec2-user/*.yml             # matching patterns
+    
