@@ -1,0 +1,14 @@
+---
+ - name: Archive a repositary from Git
+   hosts: controlnode
+   become: true
+   become_user: root
+   tasks:
+    - git: 
+       repo: https://github.com/soumithx/ansible.git
+       dest: /home/ec2-user/ansible_clone/ansible_clone.zip
+       archive: ansible_clone.zip
+       clone: no     
+       #chmod: 777
+       #owner: ec2-user
+       
