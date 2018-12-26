@@ -1,0 +1,181 @@
+### Cloud Modules ##### 
+
+
+aws_acm_facts - Retrieve certificate facts from AWS Certificate Manager service
+aws_api_gateway - Manage AWS API Gateway APIs
+aws_application_scaling_policy - Manage Application Auto Scaling Scaling Policies
+aws_az_facts - Gather facts about availability zones in AWS.
+aws_batch_compute_environment - Manage AWS Batch Compute Environments
+aws_batch_job_definition - Manage AWS Batch Job Definitions
+aws_batch_job_queue - Manage AWS Batch Job Queues
+aws_caller_facts - Get facts about the user and account being used to make AWS calls.
+aws_config_aggregation_authorization - Manage cross-account AWS Config authorizations
+aws_config_aggregator - Manage AWS Config aggregations across multiple accounts
+aws_config_delivery_channel - Manage AWS Config delivery channels
+aws_config_recorder - Manage AWS Config Recorders
+aws_config_rule - Manage AWS Config resources
+aws_direct_connect_connection - Creates, deletes, modifies a DirectConnect connection
+aws_direct_connect_gateway - Manage AWS Direct Connect Gateway.
+aws_direct_connect_link_aggregation_group - Manage Direct Connect LAG bundles.
+aws_direct_connect_virtual_interface - Manage Direct Connect virtual interfaces.
+aws_eks_cluster - Manage Elastic Kubernetes Service Clusters
+aws_elasticbeanstalk_app - create, update, and delete an elastic beanstalk application
+aws_glue_connection - Manage an AWS Glue connection
+aws_glue_job - Manage an AWS Glue job
+aws_inspector_target - Create, Update and Delete Amazon Inspector Assessment Targets
+aws_kms - Perform various KMS management tasks.
+aws_kms_facts - Gather facts about AWS KMS keys
+aws_region_facts - Gather facts about AWS regions.
+aws_s3 - manage objects in S3.
+aws_s3_bucket_facts - Lists S3 buckets in AWS
+aws_s3_cors - Manage CORS for S3 buckets in AWS
+aws_ses_identity - Manages SES email and domain identity
+aws_ses_identity_policy - Manages SES sending authorization policies
+aws_sgw_facts - Fetch AWS Storage Gateway facts
+aws_ssm_parameter_store - Manage key-value pairs in aws parameter store.
+aws_waf_condition - create and delete WAF Conditions
+aws_waf_facts - Retrieve facts for WAF ACLs, Rule , Conditions and Filters.
+aws_waf_rule - create and delete WAF Rules
+aws_waf_web_acl - create and delete WAF Web ACLs
+cloudformation - Create or delete an AWS CloudFormation stack
+cloudformation_facts - Obtain facts about an AWS CloudFormation stack
+cloudformation_stack_set - Manage groups of CloudFormation stacks
+cloudfront_distribution - create, update and delete aws cloudfront distributions.
+cloudfront_facts - Obtain facts about an AWS CloudFront distribution
+cloudfront_invalidation - create invalidations for aws cloudfront distributions
+cloudfront_origin_access_identity - create, update and delete origin access identities for a cloudfront distribution.
+cloudtrail - manage CloudTrail create, delete, update
+cloudwatchevent_rule - Manage CloudWatch Event rules and targets
+cloudwatchlogs_log_group - create or delete log_group in CloudWatchLogs
+cloudwatchlogs_log_group_facts - get facts about log_group in CloudWatchLogs
+data_pipeline - Create and manage AWS Datapipelines
+dynamodb_table - Create, update or delete AWS Dynamo DB tables.
+dynamodb_ttl - set TTL for a given DynamoDB table.
+ec2 - create, terminate, start or stop an instance in ec2
+ec2_ami - create or destroy an image in ec2
+ec2_ami_copy - copies AMI between AWS regions, return new image id
+ec2_ami_facts - Gather facts about ec2 AMIs
+ec2_ami_find - Searches for AMIs to obtain the AMI ID and other information (D)
+ec2_asg - Create or delete AWS Autoscaling Groups
+ec2_asg_facts - Gather facts about ec2 Auto Scaling Groups (ASGs) in AWS
+ec2_asg_lifecycle_hook - Create, delete or update AWS ASG Lifecycle Hooks.
+ec2_customer_gateway - Manage an AWS customer gateway
+ec2_customer_gateway_facts - Gather facts about customer gateways in AWS
+ec2_eip - manages EC2 elastic IP (EIP) addresses.
+ec2_eip_facts - List EC2 EIP details
+ec2_elb - De-registers or registers instances from EC2 ELBs
+ec2_elb_facts - Gather facts about EC2 Elastic Load Balancers in AWS
+ec2_elb_lb - Creates or destroys Amazon ELB.
+ec2_eni - Create and optionally attach an Elastic Network Interface (ENI) to an instance
+ec2_eni_facts - Gather facts about ec2 ENI interfaces in AWS
+ec2_group - maintain an ec2 VPC security group.
+ec2_group_facts - Gather facts about ec2 security groups in AWS.
+ec2_instance - Create & manage EC2 instances
+ec2_instance_facts - Gather facts about ec2 instances in AWS
+ec2_key - create or delete an ec2 key pair
+ec2_lc - Create or delete AWS Autoscaling Launch Configurations
+ec2_lc_facts - Gather facts about AWS Autoscaling Launch Configurations
+ec2_lc_find - Find AWS Autoscaling Launch Configurations
+ec2_metadata_facts - Gathers facts (instance metadata) about remote hosts within ec2
+ec2_metric_alarm - Create/update or delete AWS Cloudwatch ‘metric alarms’
+ec2_placement_group - Create or delete an EC2 Placement Group
+ec2_placement_group_facts - List EC2 Placement Group(s) details
+ec2_remote_facts - Gather facts about ec2 instances in AWS (D)
+ec2_scaling_policy - Create or delete AWS scaling policies for Autoscaling groups
+ec2_snapshot - creates a snapshot from an existing volume
+ec2_snapshot_copy - copies an EC2 snapshot and returns the new Snapshot ID.
+ec2_snapshot_facts - Gather facts about ec2 volume snapshots in AWS
+ec2_tag - create and remove tags on ec2 resources.
+ec2_vol - create and attach a volume, return volume id and device map
+ec2_vol_facts - Gather facts about ec2 volumes in AWS
+ec2_vpc_dhcp_option - Manages DHCP Options, and can ensure the DHCP options for the given VPC match what’s requested
+ec2_vpc_dhcp_option_facts - Gather facts about dhcp options sets in AWS
+ec2_vpc_egress_igw - Manage an AWS VPC Egress Only Internet gateway
+ec2_vpc_endpoint - Create and delete AWS VPC Endpoints.
+ec2_vpc_endpoint_facts - Retrieves AWS VPC endpoints details using AWS methods.
+ec2_vpc_igw - Manage an AWS VPC Internet gateway
+ec2_vpc_igw_facts - Gather facts about internet gateways in AWS
+ec2_vpc_nacl - create and delete Network ACLs.
+ec2_vpc_nacl_facts - Gather facts about Network ACLs in an AWS VPC
+ec2_vpc_nat_gateway - Manage AWS VPC NAT Gateways.
+ec2_vpc_nat_gateway_facts - Retrieves AWS VPC Managed Nat Gateway details using AWS methods.
+ec2_vpc_net - Configure AWS virtual private clouds
+ec2_vpc_net_facts - Gather facts about ec2 VPCs in AWS
+ec2_vpc_peer - create, delete, accept, and reject VPC peering connections between two VPCs.
+ec2_vpc_peering_facts - Retrieves AWS VPC Peering details using AWS methods.
+ec2_vpc_route_table - Manage route tables for AWS virtual private clouds
+ec2_vpc_route_table_facts - Gather facts about ec2 VPC route tables in AWS
+ec2_vpc_subnet - Manage subnets in AWS virtual private clouds
+ec2_vpc_subnet_facts - Gather facts about ec2 VPC subnets in AWS
+ec2_vpc_vgw - Create and delete AWS VPN Virtual Gateways.
+ec2_vpc_vgw_facts - Gather facts about virtual gateways in AWS
+ec2_vpc_vpn - Create, modify, and delete EC2 VPN connections.
+ec2_vpc_vpn_facts - Gather facts about VPN Connections in AWS.
+ec2_win_password - gets the default administrator password for ec2 windows instances
+ecs_attribute - manage ecs attributes
+ecs_cluster - create or terminate ecs clusters
+ecs_ecr - Manage Elastic Container Registry repositories
+ecs_service - create, terminate, start or stop a service in ecs
+ecs_service_facts - list or describe services in ecs
+ecs_task - run, start or stop a task in ecs
+ecs_taskdefinition - register a task definition in ecs
+ecs_taskdefinition_facts - describe a task definition in ecs
+efs - create and maintain EFS file systems
+efs_facts - Get information about Amazon EFS file systems
+elasticache - Manage cache clusters in Amazon Elasticache.
+elasticache_facts - Retrieve facts for AWS Elasticache clusters
+elasticache_parameter_group - Manage cache security groups in Amazon Elasticache.
+elasticache_snapshot - Manage cache snapshots in Amazon Elasticache.
+elasticache_subnet_group - manage Elasticache subnet groups
+elb_application_lb - Manage an Application load balancer
+elb_application_lb_facts - Gather facts about application ELBs in AWS
+elb_classic_lb - Creates or destroys Amazon ELB.
+elb_classic_lb_facts - Gather facts about EC2 Elastic Load Balancers in AWS
+elb_instance - De-registers or registers instances from EC2 ELBs
+elb_network_lb - Manage a Network Load Balancer
+elb_target - Manage a target in a target group
+elb_target_facts - Gathers which target groups a target is associated with.
+elb_target_group - Manage a target group for an Application or Network load balancer
+elb_target_group_facts - Gather facts about ELB target groups in AWS
+execute_lambda - Execute an AWS Lambda function
+iam - Manage IAM users, groups, roles and keys
+iam_cert - Manage server certificates for use on ELBs and CloudFront
+iam_group - Manage AWS IAM groups
+iam_managed_policy - Manage User Managed IAM policies
+iam_mfa_device_facts - List the MFA (Multi-Factor Authentication) devices registered for a user
+iam_policy - Manage IAM policies for users, groups, and roles
+iam_role - Manage AWS IAM roles
+iam_role_facts - Gather information on IAM roles
+iam_server_certificate_facts - Retrieve the facts of a server certificate
+iam_user - Manage AWS IAM users
+kinesis_stream - Manage a Kinesis Stream.
+lambda - Manage AWS Lambda functions
+lambda_alias - Creates, updates or deletes AWS Lambda function aliases.
+lambda_event - Creates, updates or deletes AWS Lambda function event mappings.
+lambda_facts - Gathers AWS Lambda function details as Ansible facts
+lambda_policy - Creates, updates or deletes AWS Lambda policy statements.
+lightsail - Create or delete a virtual machine instance in AWS Lightsail
+rds - create, delete, or modify an Amazon rds instance
+rds_instance - Manage RDS instances
+rds_instance_facts - obtain facts about one or more RDS instances
+rds_param_group - manage RDS parameter groups
+rds_snapshot_facts - obtain facts about one or more RDS snapshots
+rds_subnet_group - manage RDS database subnet groups
+redshift - create, delete, or modify an Amazon Redshift instance
+redshift_facts - Gather facts about Redshift cluster(s)
+redshift_subnet_group - manage Redshift cluster subnet groups
+route53 - add or delete entries in Amazons Route53 DNS service
+route53_facts - Retrieves route53 details using AWS methods
+route53_health_check - add or delete health-checks in Amazons Route53 DNS service
+route53_zone - add or delete Route53 zones
+s3_bucket - Manage S3 buckets in AWS, Ceph, Walrus and FakeS3
+s3_lifecycle - Manage s3 bucket lifecycle rules in AWS
+s3_logging - Manage logging facility of an s3 bucket in AWS
+s3_sync - Efficiently upload multiple files to S3
+s3_website - Configure an s3 bucket as a website
+sns - Send Amazon Simple Notification Service (SNS) messages
+sns_topic - Manages AWS SNS topics and subscriptions
+sqs_queue - Creates or deletes AWS SQS queues.
+sts_assume_role - Assume a role using AWS Security Token Service and obtain temporary credentials
+sts_session_token - Obtain a session token from the AWS Security Token Service
+
