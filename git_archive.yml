@@ -5,10 +5,10 @@
    become_user: root
    tasks:
     - git: 
-       repo: https://github.com/soumithx/ansible.git
-       dest: /home/ec2-user/ansible_clone/ansible_clone.zip
-       archive: ansible_clone.zip
-       clone: no     
+       repo: https://github.com/soumithx/ansible.git        # Repo Name  
+       dest: /home/ec2-user/ansible_clone/ansible_clone.zip # Destination path to arch
+       archive: ansible_clone.zip                           # file name
+       clone: no                                            # Repo clonable or not
        #chmod: 777
        #owner: ec2-user
        
