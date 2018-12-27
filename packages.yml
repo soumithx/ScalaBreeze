@@ -5,9 +5,9 @@
   become_user: root
   gather_facts: true
   tasks:
-    - name: "Install Apache 2"     # Installing Apache web-server 
-      package: name=httpd state=present
+#    - name: "Install Apache 2"     # Installing Apache web-server 
+#      package: name=httpd state=present
     - name: "Install tree"         # Installing Tree package
       package: name=tree state=present
-    - name: "Install firewall"     # Installling  Firewalll ppackage on remote node 
-      package: name=firewalld state=present 
+#    - name: "Install firewall"     # Installling  Firewalll ppackage on remote node 
+#      package: name=firewalld state=present 
