@@ -1,6 +1,6 @@
 ---
  - name: Copy files 
-   hosts: controlnode
+   hosts: remotenode
    become_user: true
    become: root
    tasks:
