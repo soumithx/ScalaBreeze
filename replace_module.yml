@@ -1,0 +1,14 @@
+---
+ - name: Applying  Replace module on Remote Node
+   hosts: remotenode
+   become: true 
+   become_user: root
+   gather_facts: true
+   tasks:
+     - name: "Ansible Replace string example"
+       replace: 
+          path: /home/ec2-user/input.txt
+          regexp: 'CentOS'
+          replace: 'REDHAT'
+             
+
