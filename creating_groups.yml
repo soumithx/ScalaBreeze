@@ -1,0 +1,19 @@
+---
+ - name: Creating Groups
+   hosts: remotenode
+   become: true
+   become_user: root
+   tasks: 
+     - name : Add group "g1" to remote node
+       group:
+         name: "{{ item }}"
+         state: present
+       loop:
+         - g3
+         - g4
+         - g5
+         - g6
+         - g7
+
+
+
