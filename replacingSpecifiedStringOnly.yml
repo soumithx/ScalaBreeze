@@ -1,0 +1,19 @@
+---
+ - name: Replacing mentioned Strings only
+   hosts: remotenode
+   become: true
+   become_user: root
+   gather_facts: true
+   tasks: 
+      - name: "Replacing Mentioned String in Remote Node"
+        replace:
+            path: /home/ec2-user/creatures.txt
+            regexp: "{{ item }}"
+            replace: "linux"
+        with_items: 
+             - 'ubuntu'
+             - 'centos'
+             - 'redhat'
+             - 'fedora'
+             - 'puppy_linux'
+             - 'kalilinux'
