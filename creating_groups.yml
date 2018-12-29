@@ -9,6 +9,8 @@
          name: "{{ item }}"
          state: present
        loop:
+         - g1
+         - g2
          - g3
          - g4
          - g5

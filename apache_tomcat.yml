@@ -1,0 +1,21 @@
+---
+ - name: Installing Apache Tomcat on RemoteNode
+   hosts: remotenode
+   become: true
+   become_user: root
+   gather_facts: true
+   tasks:
+      - name: "Updating the YUM packages"
+        yum: name=* update_cache=yes state=latest 
+      - name: "Installing Java for Tomcat"
+        package: name=java-1.8.0 state=present
+      - shell: java -version 
+        register: javaVersion
+      - debug: var=javaVersion.stdout_lines 
+      - name: Changing the Directory
+        command: chdir=/usr/local/ wget http://www-us.apache.org/dist/tomcat/tomcat-9/v9.0.12/bin/apache-tomcat-9.0.12.tar.gz
+#      - shell: wget http://www-us.apache.org/dist/tomcat/tomcat-9/v9.0.12/bin/apache-tomcat-9.0.12.tar.gz
+      
+
+
+   

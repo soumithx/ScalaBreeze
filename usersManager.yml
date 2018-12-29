@@ -1,0 +1,14 @@
+---
+  - name: Managing user groups in remote node 
+    hosts: remotenode
+    become: true
+    become_user: root
+    tasks: 
+     - name: "User Manager Started" 
+       user:
+         name: "{{ item.name }}"
+         group: "{{ item.group }}"
+         uid: "{{ item.uid }}"
+         state: "{{ item.state }}"
+       loop:
+        - { name: 'soumith',group: 'g1',uid: '1234',state: 'present' } 
