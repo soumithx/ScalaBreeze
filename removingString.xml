@@ -1,0 +1,12 @@
+---
+  - name: Removing the specifed String
+    hosts: remotenode
+    become: ture
+    become_user: root
+    gather_facts: true
+    tasks:
+      - name: "Removing the String on Remote node"
+        replace:
+          path: /home/ec2-user/creatures.txt
+          regexp: "xp"
+
