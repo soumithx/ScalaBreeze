@@ -1,0 +1,12 @@
+---
+  - name: Creating the Empty File
+    hosts: remotenode
+    become: true
+    become_user: root
+    gather_facts: true
+    tasks:
+        - name: "Creating the Empty file on Remotenode"
+          file:
+            path: "/home/ec2-user/Ansible_test.txt"
+            state: touch
+
