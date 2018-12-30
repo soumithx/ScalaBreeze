@@ -11,4 +11,6 @@
     - name: "Installing Multi Module"
       pip:
        name: Scipy,pandas
+# state: abstent for uninstall
+# state: forcereinstall for reinstall
 
