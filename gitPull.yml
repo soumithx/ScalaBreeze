@@ -1,0 +1,13 @@
+---
+ - name: Get Code from Git
+   hosts: remotenode
+   become: true
+   become_user: root
+   gather_facts: true
+   tasks:
+      - name: "cloning the repo from git"
+        git: 
+         repo: https://github.com/soumithx/ansible.git
+         dest: "/home/ec2-user/ansi"
+         clone: yes
+         version: master 
