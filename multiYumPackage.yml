@@ -1,0 +1,20 @@
+---
+ - name: Installing Multi Yum Packages
+   hosts: remotenode
+   become: true
+   become_user: root
+   gather_facts: true
+   tasks: 
+      - name: "Updating the Packages"
+        yum: 
+          name: "*"                               # Updating All the packages
+          state: latest
+          exclude: [ 'wget','elinks' ]            # excluding wget and elinks
+      - name: "Multi YUM packages on RemoteNode"
+        yum: 
+          name: "{{ item }}"                      # Installing wget elinks
+          state: present
+        with_items: 
+          - wget
+          - elinks
+      
