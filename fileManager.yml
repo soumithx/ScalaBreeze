@@ -7,6 +7,8 @@
     tasks:
         - name: "Creating the Empty file on Remotenode"
           file:
-            path: "/home/ec2-user/Ansible_test.txt"
+            path: "/home/ec2-user/test1.txt"
             state: touch
+            mode: 0777
+            owner: ec2-user
 

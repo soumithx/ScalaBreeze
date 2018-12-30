@@ -1,0 +1,16 @@
+---
+  - name: Creating MultiFiles with Modes
+    hosts: remotenode
+    gather_facts: true
+    become: true
+    become_user: root
+    tasks:
+      - name: "Creating Multi files on RemoteNode"
+        file:
+          path: "{{ item.location }}"
+          state: touch
+          mode: "{{ item.mode }}"
+        with_items:
+          - {location: '/home/ec2-user/in1.txt',mode: '0756'}
+          - {location: '/home/ec2-user/in2.txt',mode: '0400'}
+          
