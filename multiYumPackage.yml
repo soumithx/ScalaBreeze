@@ -17,4 +17,4 @@
         with_items: 
           - wget
           - elinks
-      
+          - python-pip 

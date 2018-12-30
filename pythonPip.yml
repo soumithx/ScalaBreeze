@@ -1,0 +1,9 @@
+--- 
+ - name: Installing PIP module
+   hosts: remotenode
+   become: true
+   become_user: root
+   tasks:
+     - name: "Installing PIP module on RemoteNode"
+       pip: 
+         name: Numpy

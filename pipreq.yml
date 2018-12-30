@@ -1,0 +1,14 @@
+---
+ - name: Installing with PIP requirments
+   hosts: remotenode
+   become: true
+   become_user: root
+   tasks:
+#    - name: "Installing PIP module with Requirments on remote node"
+#      pip:
+#       requirements: req.txt
+#       chdir: /tmp
+    - name: "Installing Multi Module"
+      pip:
+       name: Scipy,pandas
+
