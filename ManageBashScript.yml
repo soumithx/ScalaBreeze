@@ -1,0 +1,13 @@
+---
+ - name: "Managing .bashrc profile"
+   hosts: remotenode
+   become: false
+   become_user: root
+   gather_facts: true
+   tasks: 
+     - name: "Adding alias for managing bashrc"
+       lineinfile:
+            path: /home/ec2-user/.bashrc
+            line: alias ll='ls -lsarth'
+            insertafter: alias.*
+

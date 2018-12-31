@@ -1,0 +1,42 @@
+---
+ - name: Editing First Line
+   hosts: remotenode
+   become: true
+   become_user: root
+   tasks: 
+     - name: "Editing First Line "
+       lineinfile: 
+          dest: /home/ec2-user/output.txt
+          line: 'First Line Edited by ansible'
+          insertbefore: BOF
+     - name: "Editing File Create if not present"
+       lineinfile:
+           dest: /home/ec2-user/output1.txt
+           line: 'Hello Ansible'
+           state: present
+           create: yes 
+     - name: "Insert line after the Pattern" 
+       lineinfile:
+           dest: /home/ec2-user/output1.txt
+           line: ' Pattern test ' 
+           insertafter: '\[defaults\]'
+     - name: "Insert line before the Pattern"
+       lineinfile:
+           dest: /home/ec2-user/output1.txt
+           line: 'Ansible test'
+           insertbefore: '\[defaults\]'
+     - name: "Insert end of the line"
+       lineinfile:
+           dest: /home/ec2-user/output1.txt
+           line: "Ansible Last Line"
+     - name: "Adding Hosts"
+       lineinfile:
+           dest: /etc/hosts
+           line: 157.240.11.35 fb
+     - name: "Adding a Block of hosts"
+       blockinfile: 
+            dest: /etc/hosts
+            block: | 
+               34.234.205.165 insta
+               216.58.195.78 google
+                
