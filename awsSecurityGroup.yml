@@ -1,0 +1,7 @@
+--=
+  - name: AWS Security Group
+    hosts: localhost
+    tasks:
+      - name: "AWS Security Group"
+        ec2_group:
+            description: "hello AWS"
