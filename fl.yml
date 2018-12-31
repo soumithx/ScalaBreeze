@@ -39,4 +39,9 @@
             block: | 
                34.234.205.165 insta
                216.58.195.78 google
-                
+     - name: "Adding a Block of hosts"
+       blockinfile:
+            dest: /etc/hosts
+            marker: <!-- {mark} Adding IP address -->
+            block: |
+               0.0.0.0  ogle    

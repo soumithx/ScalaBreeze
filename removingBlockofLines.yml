@@ -1,0 +1,11 @@
+---
+  - name: "Removing Block of lines" 
+    hosts: remotenode
+    become: true
+    become_user: root
+    tasks: 
+      - name: "Removing Block of lines"
+        blockinfile:
+            dest: /etc/hosts
+            marker: <!-- {mark} Adding IP address -->
+            state: absent
