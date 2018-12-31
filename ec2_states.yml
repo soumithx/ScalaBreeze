@@ -1,0 +1,9 @@
+---
+ - name: EC2 Instance States
+   hosts: lovalhost
+   tasks:
+     - name: EC2 Manager
+       ec2: 
+#        state: present,absent,running,restarted,stopped
+         region: us-west-2
+#         instance_ids: 
