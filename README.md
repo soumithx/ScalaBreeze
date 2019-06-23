@@ -1,4 +1,6 @@
 <h1> Scala NLP Breeze </h1>
+<h3> Breeze is Successor of <code> Scalala </code> (Scala Linear Algebra) package </h3>
+
 <h3> Breeze Uses 3 Basic Data Structures </h3>
 <ul>
   <li> Dense Vector </li>
