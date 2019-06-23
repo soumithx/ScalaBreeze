@@ -27,3 +27,11 @@ print(DotProductM)
 Multiply = np.multiply(SeM,InM)
 print(Multiply)
 
+SqrtM = np.sqrt(SeM)
+print(SqrtM)
+
+SummationM = np.sum(SeM)
+print(SummationM)
+
+TransposeM = (SeM.T)
+print(TransposeM)
