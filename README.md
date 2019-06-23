@@ -6,6 +6,8 @@
   <li> Dense Counters </li>
 </ul>
 
+<p> Majority of the Cases  <b>Vector </b>and <b>Matrix</b> is Implemented </p>
+
 
 
 
