@@ -1,10 +1,10 @@
 <h1> Scala NLP Breeze </h1>
 <h3> Breeze Uses 3 Basic Data Structures </h3>
-<li>
-  <ul> Dense Vector </ul>
-  <ul> Dense Matrix </ul>
-  <ul> Dense Counters </ul>
-</li>
+<ul>
+  <li> Dense Vector </li>
+  <li> Dense Matrix </li>
+  <li> Dense Counters </li>
+</ul>
 
 
 
