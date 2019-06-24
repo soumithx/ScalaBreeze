@@ -1,2 +1,2 @@
 import pandas as p 
-InpData = pd.
+InpData = pd.read_csv('DTCTLVENMNM.csv')
