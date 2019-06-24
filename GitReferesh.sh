@@ -1,6 +1,6 @@
 GitRefresh()
 {
-git add README.md
+git add *
 git commit -m "Update Readme"
 git push
 }
